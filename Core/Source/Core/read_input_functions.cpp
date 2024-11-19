@@ -2,9 +2,11 @@
 #include <string>
 #include <vector>
 #include <fstream>
+
 using namespace std;
 
 #include "read_input_functions.h"
+
 
 vector<string> readFile_as_vector(const string& filePath){
     string line;
@@ -21,6 +23,7 @@ vector<string> readFile_as_vector(const string& filePath){
     return lines;
 }
 
+
 string readFile_as_string(const string& filePath) {
     ifstream file(filePath);
     if (!file) {
@@ -35,9 +38,10 @@ string readFile_as_string(const string& filePath) {
 
 void check_not_empty_vector(vector<string>& vector_of_lines){
     if (!vector_of_lines.empty()){
-        for (auto& line:vector_of_lines){
-            cout << line << endl;
-        }
+        cout << "Number of string rows in input file: " << vector_of_lines.size() << endl;
+        // for (auto& line:vector_of_lines){
+        //     cout << line << endl;
+        // }
     }
     else {
         cerr << "Empty file" << endl;

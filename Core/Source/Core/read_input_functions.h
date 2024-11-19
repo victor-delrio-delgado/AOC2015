@@ -6,7 +6,7 @@ using namespace std;
 
 // read_input_functions.h
 #ifndef READ_INPUT_FUNCTIONS_H
-#define FREAD_INPUT_UNCTIONS_H
+#define READ_INPUT_FUNCTIONS_H
 
 // Function declarations
 vector<string> readFile_as_vector(const string& filePath);
